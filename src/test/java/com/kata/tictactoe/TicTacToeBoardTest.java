@@ -1,5 +1,6 @@
 package com.kata.tictactoe;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -153,5 +154,19 @@ public class TicTacToeBoardTest {
         ticTacToeBoard.setValue(1,1, CROSS);
         ticTacToeBoard.setValue(2,2, CROSS);
         assertTrue(ticTacToeBoard.isEitherOfDiagonalFullOfEitherXOr0(CROSS));
+    }
+
+    @Test
+    public void ticTacToeBoardShouldReturnTrueIfFull() {
+        ticTacToeBoard.setValue(0,0, CROSS);
+        ticTacToeBoard.setValue(0,1, ZERO);
+        ticTacToeBoard.setValue(0,2, CROSS);
+        ticTacToeBoard.setValue(1,0, ZERO);
+        ticTacToeBoard.setValue(1,1, CROSS);
+        ticTacToeBoard.setValue(1,2, ZERO);
+        ticTacToeBoard.setValue(2,1, CROSS);
+        ticTacToeBoard.setValue(2,0, ZERO);
+        ticTacToeBoard.setValue(2,2, CROSS);
+        Assert.assertTrue(ticTacToeBoard.isBoardFull());
     }
 }
