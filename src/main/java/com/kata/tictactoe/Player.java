@@ -9,11 +9,11 @@ public enum Player {
         this.symbol = symbol;
     }
 
-    public char getPlayerSymbol() {
+    char getPlayerSymbol() {
         return this.symbol;
     }
 
-    public Player switchPlayer(char symbol) {
+    Player switchPlayer(char symbol) {
         return symbol == Player.X.symbol ? Player.O : Player.X;
     }
 }
