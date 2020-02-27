@@ -10,6 +10,8 @@ import static org.junit.Assert.assertThat;
 public class TicTacToeBoardTest {
 
     private static final char HYPHEN = '-';
+    private static final char ZERO = '0';
+    private static final char CROSS = 'X';
     private TicTacToeBoard ticTacToeBoard;
 
     @Before
@@ -36,25 +38,25 @@ public class TicTacToeBoardTest {
 
     @Test
     public void ticTacToeBoardShouldReturnXAtIndex_02_WhenSetValueIsXAtIndex_02() {
-        ticTacToeBoard.setValue(0,2, 'X');
-        assertThat(ticTacToeBoard.board[0][2], is('X'));
+        ticTacToeBoard.setValue(0,2, CROSS);
+        assertThat(ticTacToeBoard.board[0][2], is(CROSS));
     }
 
     @Test
     public void ticTacToeBoardShouldGet0AtIndex_20_WhenSetValueIs0AtThatIndex() {
-        ticTacToeBoard.setValue(2,0, '0');
-        assertThat(ticTacToeBoard.getValue(2, 0), is('0'));
+        ticTacToeBoard.setValue(2,0, ZERO);
+        assertThat(ticTacToeBoard.getValue(2, 0), is(ZERO));
     }
 
     @Test
     public void ticTacToeBoardShouldReturnTrueWhenXIsOccupiedAtIndex_1_1(){
-        ticTacToeBoard.setValue(1,1, 'X');
+        ticTacToeBoard.setValue(1,1, CROSS);
         assertTrue(ticTacToeBoard.isPositionOccupied(1, 1));
     }
 
     @Test
     public void ticTacToeBoardShouldReturnTrueWhen0IsOccupiedAtIndex_1_1(){
-        ticTacToeBoard.setValue(1,1, '0');
+        ticTacToeBoard.setValue(1,1, ZERO);
         assertTrue(ticTacToeBoard.isPositionOccupied(1, 1));
     }
 }
