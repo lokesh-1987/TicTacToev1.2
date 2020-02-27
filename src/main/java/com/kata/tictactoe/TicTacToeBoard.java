@@ -9,5 +9,6 @@ class TicTacToeBoard {
 
     public void setUpBoard() {
         this.board[0][0] = '-';
+        this.board[0][1] = '-';
     }
 }

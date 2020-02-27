@@ -25,4 +25,10 @@ public class TicTacToeBoardTest {
         ticTacToeBoard.setUpBoard();
         assertThat(ticTacToeBoard.board[0][0], is('-'));
     }
+
+    @Test
+    public void ticTacToeBoardShouldReturn_HyphenSymbol_AtIndex_01_AfterSetUp() {
+        ticTacToeBoard.setUpBoard();
+        assertThat(ticTacToeBoard.board[0][1], is('-'));
+    }
 }
