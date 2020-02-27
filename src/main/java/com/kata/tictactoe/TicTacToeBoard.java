@@ -115,7 +115,7 @@ class TicTacToeBoard {
         }
     }
 
-    public int[] getBoardIndex(int position) {
+    int[] getBoardIndex(int position) {
         return new int[]{0,0};
     }
 }
