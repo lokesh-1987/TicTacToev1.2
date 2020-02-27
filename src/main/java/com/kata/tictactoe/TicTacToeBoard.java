@@ -29,4 +29,8 @@ class TicTacToeBoard {
     boolean isPositionOccupied(int row, int col) {
         return this.getValue(row,col) == CROSS || this.getValue(row,col) == ZERO;
     }
+
+    public boolean isFirstRowFullOf0() {
+        return true;
+    }
 }

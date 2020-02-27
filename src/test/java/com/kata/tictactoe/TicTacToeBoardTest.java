@@ -59,4 +59,11 @@ public class TicTacToeBoardTest {
         ticTacToeBoard.setValue(1,1, ZERO);
         assertTrue(ticTacToeBoard.isPositionOccupied(1, 1));
     }
+    @Test
+    public void ticTacToeBoardShouldReturnTrueIfFirstRowIsFullOfO() {
+        ticTacToeBoard.setValue(0,0, ZERO);
+        ticTacToeBoard.setValue(0,1, ZERO);
+        ticTacToeBoard.setValue(0,2, ZERO);
+        assertTrue(ticTacToeBoard.isFirstRowFullOf0());
+    }
 }
