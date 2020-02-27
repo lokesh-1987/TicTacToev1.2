@@ -43,4 +43,13 @@ public class TicTacToeGameTest {
         assertThat(ticTacToeGame.playGame(0,1,'X'), is(EMPTY_STRING));
         assertThat(ticTacToeGame.playGame(0,1,'0'), is(PLAYER_0_PLAYS_ON_THE_PLAYED_POSITION));
     }
+
+    @Test
+    public void ticTacToeGameShouldReturn_WinningMessage_IfPlayerXCompletesFirstRow() {
+        assertThat(ticTacToeGame.playGame(0,0,'X'), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(1,1,'0'), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(0,2,'X'), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(2,0,'0'), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(0,1,'X'), is("Player X Won!"));
+    }
 }

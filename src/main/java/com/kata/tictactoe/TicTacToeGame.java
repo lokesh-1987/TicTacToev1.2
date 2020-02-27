@@ -15,6 +15,8 @@ class TicTacToeGame {
         ticTacToeBoard.setValue(row,col,playerSymbol);
         if (ticTacToeBoard.isBoardFull()) {
             return GAME_IS_DRAW;
+        } else if (ticTacToeBoard.isFirstRowFullOfEitherXOr0(playerSymbol)) {
+            return PLAYER+playerSymbol+" Won!";
         }
         return EMPTY_STRING;
     }
