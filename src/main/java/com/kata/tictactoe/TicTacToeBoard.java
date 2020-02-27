@@ -49,6 +49,8 @@ class TicTacToeBoard {
     }
 
     public boolean isFirstColumnFullOfEitherXOr0(char value) {
-        return true;
+        return this.getValue(0,0) == value
+                && this.getValue(1,0) == value
+                && this.getValue(2,0) == value;
     }
 }
