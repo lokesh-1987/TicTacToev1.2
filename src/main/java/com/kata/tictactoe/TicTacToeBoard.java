@@ -96,6 +96,13 @@ class TicTacToeBoard {
     }
 
     public boolean isBoardFull() {
+        for (int i = 0; i < board.length; i+=2) {
+            for (int j = 0; j < board[i].length; j+=2) {
+                if (getValue(i, j) != 'X' && getValue(i, j) != '0') {
+                    return false;
+                }
+            }
+        }
         return true;
     }
 }
