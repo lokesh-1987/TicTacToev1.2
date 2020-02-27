@@ -1,9 +1,9 @@
 package com.kata.tictactoe;
 
-public class TicTacToeBoard {
-    public char[][] board ;
+class TicTacToeBoard {
+    char[][] board ;
 
-    public TicTacToeBoard() {
+    TicTacToeBoard() {
         this.board = new char[3][3];
     }
 }
