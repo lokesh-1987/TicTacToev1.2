@@ -32,4 +32,11 @@ public class TicTacToeBoardTest {
         ticTacToeBoard.setUpBoard();
         assertThat(ticTacToeBoard.board[0][1], is(HYPHEN));
     }
+
+    @Test
+    public void ticTacToeBoardShouldReturnXAtIndex_02_WhenSetValueIsXAtIndex_02() {
+        ticTacToeBoard.setValue(0,2, 'X');
+        assertThat(ticTacToeBoard.board[0][2], is('X'));
+    }
+
 }
