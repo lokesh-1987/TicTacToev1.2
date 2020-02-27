@@ -8,7 +8,10 @@ class TicTacToeBoard {
     }
 
     public void setUpBoard() {
-        this.board[0][0] = '-';
-        this.board[0][1] = '-';
+        for (int row = 0; row < this.board.length; row++) {
+            for (int column = 0; column < this.board[row].length; column++) {
+                this.board[row][column] = '-';
+            }
+        }
     }
 }
