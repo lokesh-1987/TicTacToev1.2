@@ -22,8 +22,7 @@ class TicTacToeGame {
             return GAME_IS_DRAW;
         } else if (ticTacToeBoard.isAnyOfTheRowFullOfEitherXOr0(playerSymbol)
                 || ticTacToeBoard.isAnyOfTheColumnFullOfEitherXOr0(playerSymbol)
-                || ticTacToeBoard.isFirstDiagonalFullOfEitherXOr0(playerSymbol)
-                || ticTacToeBoard.isSecondDiagonalFullOfEitherXOr0(playerSymbol)) {
+                || ticTacToeBoard.isEitherOfDiagonalFullOfEitherXOr0(playerSymbol)) {
             return PLAYER+playerSymbol+ WON;
         }
         return EMPTY_STRING;
