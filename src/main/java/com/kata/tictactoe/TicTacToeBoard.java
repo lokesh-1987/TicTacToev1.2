@@ -114,4 +114,8 @@ class TicTacToeBoard {
             System.out.println();
         }
     }
+
+    public int[] getBoardIndex(int position) {
+        return new int[]{0,0};
+    }
 }
