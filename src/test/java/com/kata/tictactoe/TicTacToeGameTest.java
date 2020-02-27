@@ -8,6 +8,7 @@ import static org.junit.Assert.assertThat;
 public class TicTacToeGameTest {
 
     private static final String EMPTY_STRING = "";
+    private static final String GAME_IS_DRAW = "Game is Draw!";
 
     @Test
     public void ticTacToeGameShouldReturn_EmptyString_IfPlayer_X_MovesOn_0_0_Position() {
@@ -26,6 +27,6 @@ public class TicTacToeGameTest {
         assertThat(ticTacToeGame.playGame(1,2,'0'), is(EMPTY_STRING));
         assertThat(ticTacToeGame.playGame(2,1,'X'), is(EMPTY_STRING));
         assertThat(ticTacToeGame.playGame(2,0,'0'), is(EMPTY_STRING));
-        assertThat(ticTacToeGame.playGame(2,2,'X'), is("Game is Draw!"));
+        assertThat(ticTacToeGame.playGame(2,2,'X'), is(GAME_IS_DRAW));
     }
 }
