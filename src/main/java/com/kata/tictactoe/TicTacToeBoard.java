@@ -89,4 +89,9 @@ class TicTacToeBoard {
                 || isSecondColumnFullOfEitherXOr0(value)
                 || isLastColumnFullOfEitherXOr0(value);
     }
+
+    public boolean isEitherOfDiagonalFullOfEitherXOr0(char value) {
+        return isFirstDiagonalFullOfEitherXOr0(value)
+                || isSecondDiagonalFullOfEitherXOr0(value);
+    }
 }
