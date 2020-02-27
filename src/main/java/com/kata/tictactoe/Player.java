@@ -12,4 +12,8 @@ public enum Player {
     public char getPlayerSymbol() {
         return this.symbol;
     }
+
+    public Player switchPlayer(char symbol) {
+        return Player.O;
+    }
 }
