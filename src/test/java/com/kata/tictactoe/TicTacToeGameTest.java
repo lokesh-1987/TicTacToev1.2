@@ -43,26 +43,26 @@ public class TicTacToeGameTest {
 
     @Test
     public void ticTacToeGameShouldReturn_PositionMessage_IfPlayerOPlaysOnPlayedPosition() {
-        assertThat(ticTacToeGame.playGame(0,1,'X'), is(EMPTY_STRING));
-        assertThat(ticTacToeGame.playGame(0,1,'0'), is(PLAYER_0_PLAYS_ON_THE_PLAYED_POSITION));
+        assertThat(ticTacToeGame.playGame(0,1,CROSS), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(0,1,ZERO), is(PLAYER_0_PLAYS_ON_THE_PLAYED_POSITION));
     }
 
     @Test
     public void ticTacToeGameShouldReturn_WinningMessage_IfPlayerXCompletesFirstRow() {
-        assertThat(ticTacToeGame.playGame(0,0,'X'), is(EMPTY_STRING));
-        assertThat(ticTacToeGame.playGame(1,1,'0'), is(EMPTY_STRING));
-        assertThat(ticTacToeGame.playGame(0,2,'X'), is(EMPTY_STRING));
-        assertThat(ticTacToeGame.playGame(2,0,'0'), is(EMPTY_STRING));
-        assertThat(ticTacToeGame.playGame(0,1,'X'), is(PLAYER_X_WON));
+        assertThat(ticTacToeGame.playGame(0,0,CROSS), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(1,1,ZERO), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(0,2,CROSS), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(2,0,ZERO), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(0,1,CROSS), is(PLAYER_X_WON));
     }
 
     @Test
     public void ticTacToeGameShouldReturn_WinningMessage_IfPlayerOCompletesLastRow() {
-        assertThat(ticTacToeGame.playGame(0,0,'X'), is(EMPTY_STRING));
-        assertThat(ticTacToeGame.playGame(2,1,'0'), is(EMPTY_STRING));
-        assertThat(ticTacToeGame.playGame(0,2,'X'), is(EMPTY_STRING));
-        assertThat(ticTacToeGame.playGame(2,0,'0'), is(EMPTY_STRING));
-        assertThat(ticTacToeGame.playGame(1,2,'X'), is(EMPTY_STRING));
-        assertThat(ticTacToeGame.playGame(2,2,'0'), is(PLAYER_0_WON));
+        assertThat(ticTacToeGame.playGame(0,0,CROSS), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(2,1,ZERO), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(0,2,CROSS), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(2,0,ZERO), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(1,2,CROSS), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(2,2,ZERO), is(PLAYER_0_WON));
     }
 }
