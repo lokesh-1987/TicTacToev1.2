@@ -1,7 +1,7 @@
 package com.kata.tictactoe;
 
 public enum Player {
-    X('X');
+    X('X'), O('0');
 
     private char symbol;
 
