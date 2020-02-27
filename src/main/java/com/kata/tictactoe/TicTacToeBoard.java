@@ -35,4 +35,10 @@ class TicTacToeBoard {
                 && this.getValue(0,1) == value
                 && this.getValue(0,2) == value;
     }
+
+    public boolean isSecondRowFullOfEitherXOr0(char value) {
+        return this.getValue(1,0) == value
+                && this.getValue(1,1) == value
+                && this.getValue(1,2) == value;
+    }
 }
