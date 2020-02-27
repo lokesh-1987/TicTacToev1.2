@@ -118,7 +118,7 @@ public class TicTacToeBoardTest {
     @Test
     public void ticTacToeBoardShouldReturnTrueIfFirstDiagonalIsFullOf0() {
         ticTacToeBoard.setValue(0,2, ZERO);
-        ticTacToeBoard.setValue(1,2, ZERO);
+        ticTacToeBoard.setValue(1,1, ZERO);
         ticTacToeBoard.setValue(2,0, ZERO);
         assertTrue(ticTacToeBoard.isFirstDiagonalFullOfEitherXOr0(ZERO));
     }
