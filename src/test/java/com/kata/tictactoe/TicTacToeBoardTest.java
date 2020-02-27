@@ -171,7 +171,7 @@ public class TicTacToeBoardTest {
     }
 
     @Test
-    public void ticTacToeBoardShouldBeDisplayedOnConsoleBeforeGameStarts() {
+    public void ticTacToeBoardShouldBeDisplayedWithHyphenSymbolsBeforeGameStarts() {
         ticTacToeBoard.setUpBoard();
         ticTacToeBoard.displayBoard();
     }
