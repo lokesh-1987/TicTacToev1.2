@@ -39,4 +39,9 @@ public class TicTacToeBoardTest {
         assertThat(ticTacToeBoard.board[0][2], is('X'));
     }
 
+    @Test
+    public void ticTacToeBoardShouldGet0AtIndex_20_WhenSetValueIs0AtThatIndex() {
+        ticTacToeBoard.setValue(2,0, '0');
+        assertThat(ticTacToeBoard.getValue(2, 0), is('0'));
+    }
 }
