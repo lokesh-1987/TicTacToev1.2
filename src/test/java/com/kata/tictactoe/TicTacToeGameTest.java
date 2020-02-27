@@ -12,6 +12,7 @@ public class TicTacToeGameTest {
     private static final String GAME_IS_DRAW = "Game is Draw!";
     private static final char CROSS = 'X';
     private static final char ZERO = '0';
+    private static final String PLAYER_0_PLAYS_ON_THE_PLAYED_POSITION = "Player 0 plays on the played position.";
     private TicTacToeGame ticTacToeGame;
 
     @Before
@@ -40,6 +41,6 @@ public class TicTacToeGameTest {
     @Test
     public void ticTacToeGameShouldReturn_PositionMessage_IfPlayerOPlaysOnPlayedPosition() {
         assertThat(ticTacToeGame.playGame(0,1,'X'), is(EMPTY_STRING));
-        assertThat(ticTacToeGame.playGame(0,1,'0'), is("Player 0 plays on the played position."));
+        assertThat(ticTacToeGame.playGame(0,1,'0'), is(PLAYER_0_PLAYS_ON_THE_PLAYED_POSITION));
     }
 }
