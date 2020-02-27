@@ -83,4 +83,12 @@ public class TicTacToeGameTest {
         assertThat(ticTacToeGame.playGame(2,1,CROSS), is(PLAYER_X_WON));
     }
 
+    @Test
+    public void ticTacToeShouldReturn_WinningMessage_IfPlayerXCompletesFirstDiagonal() {
+        assertThat(ticTacToeGame.playGame(0,2,CROSS), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(1,0,ZERO), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(1,1,CROSS), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(1,2,ZERO), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(2,0,CROSS), is(PLAYER_X_WON));
+    }
 }

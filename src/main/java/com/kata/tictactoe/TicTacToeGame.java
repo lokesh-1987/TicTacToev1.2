@@ -21,7 +21,8 @@ class TicTacToeGame {
         if (ticTacToeBoard.isBoardFull()) {
             return GAME_IS_DRAW;
         } else if (ticTacToeBoard.isAnyOfTheRowFullOfEitherXOr0(playerSymbol)
-                || ticTacToeBoard.isAnyOfTheColumnFullOfEitherXOr0(playerSymbol)) {
+                || ticTacToeBoard.isAnyOfTheColumnFullOfEitherXOr0(playerSymbol)
+                || ticTacToeBoard.isFirstDiagonalFullOfEitherXOr0(playerSymbol)) {
             return PLAYER+playerSymbol+ WON;
         }
         return EMPTY_STRING;
