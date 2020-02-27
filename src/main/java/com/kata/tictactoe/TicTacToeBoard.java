@@ -66,31 +66,31 @@ class TicTacToeBoard {
                 && this.getValue(2,2) == value;
     }
 
-    public boolean isFirstDiagonalFullOfEitherXOr0(char value) {
+    boolean isFirstDiagonalFullOfEitherXOr0(char value) {
         return this.getValue(0,2) == value
                 && this.getValue(1,1) == value
                 && this.getValue(2,0) == value;
     }
 
-    public boolean isSecondDiagonalFullOfEitherXOr0(char value) {
+    boolean isSecondDiagonalFullOfEitherXOr0(char value) {
         return this.getValue(0,0) == value
                 && this.getValue(1,1) == value
                 && this.getValue(2,2) == value;
     }
 
-    public boolean isAnyOfTheRowFullOfEitherXOr0(char value) {
+    boolean isAnyOfTheRowFullOfEitherXOr0(char value) {
         return isFirstRowFullOfEitherXOr0(value)
                 || isSecondRowFullOfEitherXOr0(value)
                 || isLastRowFullOfEitherXOr0(value);
     }
 
-    public boolean isAnyOfTheColumnFullOfEitherXOr0(char value) {
+    boolean isAnyOfTheColumnFullOfEitherXOr0(char value) {
         return isFirstColumnFullOfEitherXOr0(value)
                 || isSecondColumnFullOfEitherXOr0(value)
                 || isLastColumnFullOfEitherXOr0(value);
     }
 
-    public boolean isEitherOfDiagonalFullOfEitherXOr0(char value) {
+    boolean isEitherOfDiagonalFullOfEitherXOr0(char value) {
         return isFirstDiagonalFullOfEitherXOr0(value)
                 || isSecondDiagonalFullOfEitherXOr0(value);
     }
