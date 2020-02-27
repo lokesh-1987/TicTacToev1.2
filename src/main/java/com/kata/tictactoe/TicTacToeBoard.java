@@ -1,6 +1,7 @@
 package com.kata.tictactoe;
 
 class TicTacToeBoard {
+    private static final char HYPHEN = '-';
     char[][] board;
 
     TicTacToeBoard() {
@@ -10,7 +11,7 @@ class TicTacToeBoard {
     void setUpBoard() {
         for (int row = 0; row < this.board.length; row++) {
             for (int column = 0; column < this.board[row].length; column++) {
-                this.board[row][column] = '-';
+                this.board[row][column] = HYPHEN;
             }
         }
     }
