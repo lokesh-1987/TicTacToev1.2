@@ -8,6 +8,7 @@ import static org.junit.Assert.assertThat;
 
 public class TicTacToeBoardTest {
 
+    private static final char HYPHEN = '-';
     private TicTacToeBoard ticTacToeBoard;
 
     @Before
@@ -23,12 +24,12 @@ public class TicTacToeBoardTest {
     @Test
     public void ticTacToeBoardShouldReturn_HyphenSymbol_AtIndex_00_AfterSetUp() {
         ticTacToeBoard.setUpBoard();
-        assertThat(ticTacToeBoard.board[0][0], is('-'));
+        assertThat(ticTacToeBoard.board[0][0], is(HYPHEN));
     }
 
     @Test
     public void ticTacToeBoardShouldReturn_HyphenSymbol_AtIndex_01_AfterSetUp() {
         ticTacToeBoard.setUpBoard();
-        assertThat(ticTacToeBoard.board[0][1], is('-'));
+        assertThat(ticTacToeBoard.board[0][1], is(HYPHEN));
     }
 }
