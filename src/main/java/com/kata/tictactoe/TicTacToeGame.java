@@ -6,7 +6,11 @@ class TicTacToeGame {
     private static final String GAME_IS_DRAW = "Game is Draw!";
     private static final String PLAYER = "Player ";
     private static final String PLAYS_ON_THE_PLAYED_POSITION = " plays on the played position.";
-    private TicTacToeBoard ticTacToeBoard = new TicTacToeBoard();
+    private TicTacToeBoard ticTacToeBoard;
+
+    TicTacToeGame(TicTacToeBoard ticTacToeBoard) {
+        this.ticTacToeBoard = ticTacToeBoard;
+    }
 
     String playGame(int row, int col, char playerSymbol) {
         if (ticTacToeBoard.isPositionOccupied(row,col)) {

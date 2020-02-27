@@ -14,10 +14,11 @@ public class TicTacToeGameTest {
     private static final char ZERO = '0';
     private static final String PLAYER_0_PLAYS_ON_THE_PLAYED_POSITION = "Player 0 plays on the played position.";
     private TicTacToeGame ticTacToeGame;
+    private TicTacToeBoard ticTacToeBoard = new TicTacToeBoard();
 
     @Before
     public void setUp() {
-        ticTacToeGame = new TicTacToeGame();
+        ticTacToeGame = new TicTacToeGame(ticTacToeBoard);
     }
 
     @Test
