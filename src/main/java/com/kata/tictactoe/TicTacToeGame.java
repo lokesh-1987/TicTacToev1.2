@@ -6,6 +6,7 @@ class TicTacToeGame {
     private static final String GAME_IS_DRAW = "Game is Draw!";
     private static final String PLAYER = "Player ";
     private static final String PLAYS_ON_THE_PLAYED_POSITION = " plays on the played position.";
+    private static final String WON = " Won!";
     private TicTacToeBoard ticTacToeBoard;
 
     TicTacToeGame(TicTacToeBoard ticTacToeBoard) {
@@ -20,7 +21,7 @@ class TicTacToeGame {
         if (ticTacToeBoard.isBoardFull()) {
             return GAME_IS_DRAW;
         } else if (ticTacToeBoard.isFirstRowFullOfEitherXOr0(playerSymbol)) {
-            return PLAYER+playerSymbol+" Won!";
+            return PLAYER+playerSymbol+ WON;
         }
         return EMPTY_STRING;
     }
