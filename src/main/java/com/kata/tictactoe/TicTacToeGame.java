@@ -18,7 +18,7 @@ class TicTacToeGame {
             return PLAYER +playerSymbol+ PLAYS_ON_THE_PLAYED_POSITION;
         }
         ticTacToeBoard.setValue(row,col,playerSymbol);
-        if (ticTacToeBoard.isBoardFull()) {
+        if (isGameDraw()) {
             return GAME_IS_DRAW;
         } else if (ticTacToeBoard.isAnyOfTheRowFullOfEitherXOr0(playerSymbol)
                 || ticTacToeBoard.isAnyOfTheColumnFullOfEitherXOr0(playerSymbol)
@@ -26,5 +26,9 @@ class TicTacToeGame {
             return PLAYER+playerSymbol+ WON;
         }
         return EMPTY_STRING;
+    }
+
+    private boolean isGameDraw() {
+        return ticTacToeBoard.isBoardFull();
     }
 }
