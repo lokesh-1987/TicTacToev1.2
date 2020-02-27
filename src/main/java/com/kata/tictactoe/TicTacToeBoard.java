@@ -95,7 +95,7 @@ class TicTacToeBoard {
                 || isSecondDiagonalFullOfEitherXOr0(value);
     }
 
-    public boolean isBoardFull() {
+    boolean isBoardFull() {
         for (int i = 0; i < board.length; i+=2) {
             for (int j = 0; j < board[i].length; j+=2) {
                 if (getValue(i, j) != 'X' && getValue(i, j) != '0') {
@@ -106,7 +106,7 @@ class TicTacToeBoard {
         return true;
     }
 
-    public void displayBoard() {
+    void displayBoard() {
         for (char[] row : this.board){
             for (char c : row) {
                 System.out.print(c);
