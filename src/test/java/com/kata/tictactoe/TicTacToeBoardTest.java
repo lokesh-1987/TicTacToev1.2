@@ -64,7 +64,7 @@ public class TicTacToeBoardTest {
         ticTacToeBoard.setValue(0,0, ZERO);
         ticTacToeBoard.setValue(0,1, ZERO);
         ticTacToeBoard.setValue(0,2, ZERO);
-        assertTrue(ticTacToeBoard.isFirstRowFullOf0());
+        assertTrue(ticTacToeBoard.isFirstRowFullOfEitherXOr0(ZERO));
     }
 
     @Test
@@ -72,6 +72,6 @@ public class TicTacToeBoardTest {
         ticTacToeBoard.setValue(0,0, CROSS);
         ticTacToeBoard.setValue(0,1, CROSS);
         ticTacToeBoard.setValue(0,2, CROSS);
-        assertTrue(ticTacToeBoard.isFirstRowFullOfX());
+        assertTrue(ticTacToeBoard.isFirstRowFullOfEitherXOr0(CROSS));
     }
 }

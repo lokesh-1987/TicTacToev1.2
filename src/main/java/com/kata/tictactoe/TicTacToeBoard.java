@@ -30,15 +30,9 @@ class TicTacToeBoard {
         return this.getValue(row,col) == CROSS || this.getValue(row,col) == ZERO;
     }
 
-    public boolean isFirstRowFullOf0() {
-        return this.getValue(0,0) == '0'
-                && this.getValue(0,1) == '0'
-                && this.getValue(0,2) == '0';
-    }
-
-    public boolean isFirstRowFullOfX() {
-        return this.getValue(0,0) == 'X'
-                && this.getValue(0,1) == 'X'
-                && this.getValue(0,2) == 'X';
+    public boolean isFirstRowFullOfEitherXOr0(char value) {
+        return this.getValue(0,0) == value
+                && this.getValue(0,1) == value
+                && this.getValue(0,2) == value;
     }
 }
