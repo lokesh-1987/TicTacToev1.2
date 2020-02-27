@@ -36,4 +36,10 @@ public class TicTacToeGameTest {
         assertThat(ticTacToeGame.playGame(2,0, ZERO), is(EMPTY_STRING));
         assertThat(ticTacToeGame.playGame(2,2, CROSS), is(GAME_IS_DRAW));
     }
+
+    @Test
+    public void ticTacToeGameShouldReturn_PositionMessage_IfPlayerOPlaysOnPlayedPosition() {
+        assertThat(ticTacToeGame.playGame(0,1,'X'), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(0,1,'0'), is("Player 0 plays on the played position."));
+    }
 }
