@@ -4,11 +4,13 @@ class TicTacToeGame {
 
     private static final String EMPTY_STRING = "";
     private static final String GAME_IS_DRAW = "Game is Draw!";
+    private static final String PLAYER = "Player ";
+    private static final String PLAYS_ON_THE_PLAYED_POSITION = " plays on the played position.";
     private TicTacToeBoard ticTacToeBoard = new TicTacToeBoard();
 
     String playGame(int row, int col, char playerSymbol) {
         if (ticTacToeBoard.isPositionOccupied(row,col)) {
-            return "Player "+playerSymbol+" plays on the played position.";
+            return PLAYER +playerSymbol+ PLAYS_ON_THE_PLAYED_POSITION;
         }
         ticTacToeBoard.setValue(row,col,playerSymbol);
         if (ticTacToeBoard.isBoardFull()) {
