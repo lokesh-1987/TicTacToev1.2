@@ -169,4 +169,10 @@ public class TicTacToeBoardTest {
         ticTacToeBoard.setValue(2,2, CROSS);
         Assert.assertTrue(ticTacToeBoard.isBoardFull());
     }
+
+    @Test
+    public void ticTacToeBoardShouldBeDisplayedOnConsoleBeforeGameStarts() {
+        ticTacToeBoard.setUpBoard();
+        ticTacToeBoard.displayBoard();
+    }
 }

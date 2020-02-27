@@ -105,4 +105,8 @@ class TicTacToeBoard {
         }
         return true;
     }
+
+    public void displayBoard() {
+        System.out.println("Display Board!");
+    }
 }
