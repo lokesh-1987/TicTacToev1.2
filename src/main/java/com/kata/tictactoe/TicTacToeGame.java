@@ -20,12 +20,16 @@ class TicTacToeGame {
         ticTacToeBoard.setValue(row,col,playerSymbol);
         if (isGameDraw()) {
             return GAME_IS_DRAW;
-        } else if (ticTacToeBoard.isAnyOfTheRowFullOfEitherXOr0(playerSymbol)
-                || ticTacToeBoard.isAnyOfTheColumnFullOfEitherXOr0(playerSymbol)
-                || ticTacToeBoard.isEitherOfDiagonalFullOfEitherXOr0(playerSymbol)) {
+        } else if (isGameWon(playerSymbol)) {
             return PLAYER+playerSymbol+ WON;
         }
         return EMPTY_STRING;
+    }
+
+    private boolean isGameWon(char playerSymbol) {
+        return ticTacToeBoard.isAnyOfTheRowFullOfEitherXOr0(playerSymbol)
+                || ticTacToeBoard.isAnyOfTheColumnFullOfEitherXOr0(playerSymbol)
+                || ticTacToeBoard.isEitherOfDiagonalFullOfEitherXOr0(playerSymbol);
     }
 
     private boolean isGameDraw() {
