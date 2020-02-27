@@ -14,6 +14,6 @@ public enum Player {
     }
 
     public Player switchPlayer(char symbol) {
-        return Player.O;
+        return symbol == Player.X.symbol ? Player.O : Player.X;
     }
 }
