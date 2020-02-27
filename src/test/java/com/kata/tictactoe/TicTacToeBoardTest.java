@@ -130,4 +130,12 @@ public class TicTacToeBoardTest {
         ticTacToeBoard.setValue(2,2, CROSS);
         assertTrue(ticTacToeBoard.isSecondDiagonalFullOfEitherXOr0(CROSS));
     }
+
+    @Test
+    public void ticTacToeBoardShouldReturnTrueIfAnyOfTheRowIsFullOfO() {
+        ticTacToeBoard.setValue(0,0, ZERO);
+        ticTacToeBoard.setValue(0,1, ZERO);
+        ticTacToeBoard.setValue(0,2, ZERO);
+        assertTrue(ticTacToeBoard.isAnyOfTheRowFullOfEitherXOr0(ZERO));
+    }
 }

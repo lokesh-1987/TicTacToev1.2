@@ -77,4 +77,10 @@ class TicTacToeBoard {
                 && this.getValue(1,1) == value
                 && this.getValue(2,2) == value;
     }
+
+    public boolean isAnyOfTheRowFullOfEitherXOr0(char value) {
+        return isFirstRowFullOfEitherXOr0(value)
+                || isSecondRowFullOfEitherXOr0(value)
+                || isLastRowFullOfEitherXOr0(value);
+    }
 }
