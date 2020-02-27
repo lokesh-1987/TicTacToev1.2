@@ -2,6 +2,8 @@ package com.kata.tictactoe;
 
 class TicTacToeBoard {
     private static final char HYPHEN = '-';
+    private static final char CROSS = 'X';
+    private static final char ZERO = '0';
     char[][] board;
 
     TicTacToeBoard() {
@@ -25,6 +27,6 @@ class TicTacToeBoard {
     }
 
     boolean isPositionOccupied(int row, int col) {
-        return this.getValue(row,col) == 'X' || this.getValue(row,col) == '0';
+        return this.getValue(row,col) == CROSS || this.getValue(row,col) == ZERO;
     }
 }
