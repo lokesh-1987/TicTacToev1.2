@@ -59,4 +59,10 @@ class TicTacToeBoard {
                 && this.getValue(1,1) == value
                 && this.getValue(2,1) == value;
     }
+
+    public boolean isLastColumnFullOfEitherXOr0(char value) {
+        return this.getValue(0,2) == value
+                && this.getValue(1,2) == value
+                && this.getValue(2,2) == value;
+    }
 }

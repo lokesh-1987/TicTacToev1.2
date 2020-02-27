@@ -106,4 +106,12 @@ public class TicTacToeBoardTest {
         ticTacToeBoard.setValue(2,1, CROSS);
         assertTrue(ticTacToeBoard.isSecondColumnFullOfEitherXOr0(CROSS));
     }
+
+    @Test
+    public void ticTacToeBoardShouldReturnTrueIfLastColumnIsFullOfX() {
+        ticTacToeBoard.setValue(0,2, CROSS);
+        ticTacToeBoard.setValue(1,2, CROSS);
+        ticTacToeBoard.setValue(2,2, CROSS);
+        assertTrue(ticTacToeBoard.isLastColumnFullOfEitherXOr0(CROSS));
+    }
 }
