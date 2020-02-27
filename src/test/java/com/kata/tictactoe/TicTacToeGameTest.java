@@ -65,4 +65,13 @@ public class TicTacToeGameTest {
         assertThat(ticTacToeGame.playGame(1,2,CROSS), is(EMPTY_STRING));
         assertThat(ticTacToeGame.playGame(2,2,ZERO), is(PLAYER_0_WON));
     }
+
+    @Test
+    public void ticTacToeGameShouldReturn_WinningMessage_IfPlayerXCompletesFirstColumn() {
+        assertThat(ticTacToeGame.playGame(0,0,CROSS), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(2,1,ZERO), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(1,0,CROSS), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(1,1,ZERO), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(2,0,CROSS), is(PLAYER_X_WON));
+    }
 }
