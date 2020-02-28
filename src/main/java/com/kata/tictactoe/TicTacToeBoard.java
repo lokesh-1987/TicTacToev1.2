@@ -123,12 +123,6 @@ class TicTacToeBoard {
     }
 
     int[] getBoardIndex(int position) {
-        switch (position) {
-            case 1 :
-                return this.boardIndex.get(0);
-            case 2 :
-                return this.boardIndex.get(1);
-        }
-        return null;
+        return this.boardIndex.get(position-1);
     }
 }
