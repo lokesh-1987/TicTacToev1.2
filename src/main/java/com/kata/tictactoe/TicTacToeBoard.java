@@ -122,7 +122,10 @@ class TicTacToeBoard {
         }
     }
 
-    int[] getBoardIndex(int position) {
+    int[] getBoardIndex(int position) throws InvalidPositionException {
+        if (position > 9) {
+            throw new InvalidPositionException("Position is invalid!");
+        }
         return this.boardIndex.get(position-1);
     }
 }
