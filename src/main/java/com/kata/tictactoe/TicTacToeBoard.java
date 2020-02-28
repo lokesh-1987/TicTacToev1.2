@@ -8,7 +8,7 @@ class TicTacToeBoard {
     private static final char CROSS = 'X';
     private static final char ZERO = '0';
     char[][] board;
-    List<int[]> boardIndex = Arrays.asList(new int[][]{
+    private List<int[]> boardIndex = Arrays.asList(new int[][]{
             {0,0},{0,1},{0,2},
             {1,0},{1,1},{1,2},
             {2,0},{2,1},{2,2}});
