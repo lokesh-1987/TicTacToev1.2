@@ -197,4 +197,9 @@ public class TicTacToeBoardTest {
     public void ticTacToeBoardShouldReturnExceptionIfThePositionIsGreaterThan9() throws InvalidPositionException {
         int [] boardIndex = ticTacToeBoard.getBoardIndex(10);
     }
+
+    @Test(expected = InvalidPositionException.class)
+    public void ticTacToeBoardShouldReturnExceptionIfThePositionIsLessThan1() throws InvalidPositionException {
+        int [] boardIndex = ticTacToeBoard.getBoardIndex(0);
+    }
 }
