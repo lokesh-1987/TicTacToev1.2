@@ -126,6 +126,8 @@ class TicTacToeBoard {
         switch (position) {
             case 1 :
                 return this.boardIndex.get(0);
+            case 2 :
+                return this.boardIndex.get(1);
         }
         return null;
     }
