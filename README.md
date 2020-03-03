@@ -16,9 +16,10 @@ The rules are described below :
 - If a player is able to draw three X’s or three O’s in a row, that player wins.
 - If all nine squares are filled and neither player has three in a row, the game is a draw.
 
-## Implementation
+# Implementation
 
-    ## Tic Tac Toe Application
+## Tic Tac Toe Application
+
         - This Application basically contains a (3*3) board as shown below,
 
 			$(0,0) $(0,1) $(0,2)
@@ -53,7 +54,7 @@ The rules are described below :
                 4) Both diagonals are occupied by X or 0
             If either player wins the game, then the message is displayed as **Player X Won! or Player O Won!**
 
-## Execution
+# Execution
 
 In order to run the application, follow the below steps,
  a) Open a terminal window
