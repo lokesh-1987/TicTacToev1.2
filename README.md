@@ -31,18 +31,21 @@ The rules are described below :
              (7)   (8)    (9)
 			  -     -      -
 			  
-        -   Always Player X plays first, then Player O and, then, both players play alternatively until the game finishes.
+        -   Always Player X plays first, then Player O and, then, both players play alternatively until
+            the game finishes.
         -   Each Player enters the valid position for example 1, 2, etc. and respective position is replaced
             by either X or 0 depending on Player X or O input.
         -   The following positions are considered as valid,i.e., 1 --> $(0,0), 2-->$(0,1),
             3--> $(0,2), 4--> $(1,0), 5--> $(1,1), 6--> $(1,2),7--> $(2,0), 8--> $(2,1), 9--> $(2,2)
             and rest other position are considered as Invalid Position.
-        -   If the player plays on the played position, then also position is occupied.Hence, a message is displayed as
-			**Player 0 plays on the played  position.** or **Player X plays on the played position.**
+        -   If the player plays on the played position, then the position is occupied.Hence, a message
+            is displayed as **Player 0 plays on the played  position.** or
+             **Player X plays on the played position.**
             If the position is greater than 9 or less than 1, then the position is invalid.
-            If the position is invalid, then a message is displayed on console i.e., **Position is Invalid! Please re-enter the position..**
+            If the position is invalid, then a message is displayed on console i.e.,
+             **Position is Invalid! Please re-enter the position..**
         -   If all the valid positions are occupied by the players alternatively, then game is draw.
-            If the game draws, then the message is displayed as **Game is Draw!**
+            If the game is draw, then the message is displayed as **Game is Draw!**
         -   Either player wins if
                 1) First row/Column is occupied by X or 0
                 2) Second row/column is occupied by X or 0
