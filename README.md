@@ -22,12 +22,12 @@ The rules are described below :
 
 - This Application basically contains a (3*3) board as shown below,
 
-    $(0,0) $(0,1) $(0,2)
-     (1)    (2)    (3)
-    $(1,0) $(1,1) $(1,2)
-     (4)    (5)    (6)
-    $(2,0) $(2,1) $(2,2)
-     (7)    (8)    (9)
+    - $(0,0) $(0,1) $(0,2)
+    - (1)    (2)    (3)
+    - $(1,0) $(1,1) $(1,2)
+    - (4)    (5)    (6)
+    - $(2,0) $(2,1) $(2,2)
+    -  (7)    (8)    (9)
 			  
 - Always Player X plays first, then Player O and, then, both players play alternatively until
   the game finishes.
